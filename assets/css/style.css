@@ -1,3 +1,5 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 /* Asterisk wilacrd secltoe to ovwrride default style added bt the browser*/
 *{
     padding: 0;
@@ -11,15 +13,20 @@ body {
     flex-direction: column;
     /* generic project style*/
     color: #3a3a3a;
-    font-family: 'lato' sans-serif;
+    font-family: 'lato', sans-serif;
 }
  h1{
-    font-family: 'oswald' sans-serif;
+    font-family: 'oswald', sans-serif;
  }
 
 /*header*/
 header{
-    background-color: lightcoral ;
+    background-color: #afafaf;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99px;
+    width: 100%;
+    box-shadow: 2 2px 2px #3a3a3a;
 }
 /*main*/
 main{
