@@ -18,6 +18,12 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+h1,h2,h3{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
 /* Header */
 header {
     background-color: #ffffff;
@@ -36,12 +42,6 @@ header a {
     color: inherit;
 }
 
-h1 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
-}
 
 #menu {
     font-size: 110%;
@@ -84,10 +84,31 @@ nav {
 
 /* Main content */
 main {
-    background-color: lightblue;
+
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
+}
+/* hero section*/
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
+    position: relative;
+}
+#hero-text {
+    background-color: rgb(241,109, 107, .7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+    
+}
+#hero-text > h2, #hero-text > h3 {
+    color: #ffffff;
 }
 
 /* Footer */
@@ -98,6 +119,7 @@ main {
     justify-content: space-evenly;
     list-style-type: none;
 }
+
 #social-networks i {
     font-size: 160%;
     padding: 5%;
